@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Top five player selected for team </title>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="player.css">
+
+    <!-- fontawsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Oswald:wght@500&family=Poppins&family=Roboto:ital@1&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+
+    <!-- bootstraps cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+</head>
+<body>
+    <!-- header sec start here -->
+
+    <header class=" bg-dark text-white">
+
+        <section id="banner-section" >
+          <div class="banner-div">
+            <h1 class="header fw-bold">Top five player selected for team</h1>
+            <p> wise we can select top player within your budget and make a good team</p>
+          </div>
+        </section>
+
+    </header>
+
+    <!-- header sec ends here -->
+
+    <main >
+        <!-- cards sec start here -->
+
+        <section  id="card-section ">
+            <div class=" g-3 p-5">
+
+              <div class="row g-3">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card  p-3" >
+                        <img class="player-img" src="player picture/de maria.jpg" alt="">
+                        <h4 id="first-player" class="text-center fw-bold pt-2">Angel Di Maria</h4>
+                        <p class="text-center"> 17 goals  .   90 assist</p>
+                        <button id="first-button" class="btn btn-primary"> Select</button>
+                    </div>
+                  
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card p-3">
+                        <img class="player-img" src="player picture/benjama.jpg" alt="">
+                        <h4 id="sec-player" class="text-center fw-bold pt-2">Karim Benzema</h4>
+                        <p class="text-center "> 13 goals  .   80 assist</p>
+                        <button id="sec-button" class="btn btn-primary"> Select</button>
+                    </div>
+                  
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card p-3">
+                        <img class="player-img" src="player picture/mbbappe.jpg" alt="">
+                        <h4 id="third-player" class="text-center pt-2 fw-bold">Kylian Mbappe</h4>
+                        <p class="text-center"> 25 goals  .   70 assist</p>
+                        <button id="third-button" class="btn btn-primary"> Select</button>
+                    </div>
+                </div>    
+
+                <!-- player list section -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card fixed-height p-3">
+                            <h2 class="fw-bold">Selected -V</h2>
+                            <ol class="player-list" id="player-list">
+                            </ol>
+                    </div>
+                </div>
+
+
+              
+                <div class="col-lg-3 col-md-6">
+                    <div class="card p-3">
+                        <img class="player-img" src="player picture/messi.jpg" alt="">
+                        <h4 id="fourth-player" class="text-center pt-2 fw-bold">Leonel Messi</h4>
+                        <p class="text-center"> 30 goals  .   120 assist</p>
+                        <button id="fourth-button" class="btn btn-primary"> Select</button>
+                    </div>
+                </div>  
+
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card p-3">
+                        <img class="player-img" src="player picture/ozil.jpg" alt="">
+                        <h4 id="fifth-player" class="text-center pt-2 fw-bold">Mesut Ozil</h4>
+                        <p class="text-center"> 20 goals  .   110 assist</p>
+                        <button id="fifth-button" class="btn btn-primary"> Select</button>
+                    </div>
+                </div>  
+
+
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card p-3">
+                        <img class="player-img" src="player picture/mo sala.jpg" alt="">
+                        <h4 id="sixth-player" class="text-center pt-2 fw-bold">Mo sala</h4>
+                        <p class="text-center"> 28 goals  .   130 assist</p>
+                        <button id="sixth-button" class="btn btn-primary"> Select</button>
+                    </div>
+                </div> 
+                <!-- calculation section -->
+
+                <div class="col-lg-3 col-md-6">
+                  <div class="card  p-3">
+                      <h2 class="fw-bold">Budget:</h2>
+                      <div class="d-flex justify-content-between   align-items-center  ">
+                          <p>Per Player:</p>
+                          <input  id="player-amount" class="w-50" type="text">
+                      </div>
+                      <button id="calculate-button" class="btn btn-primary m-3"> Calculate</button>
+                      <div class="d-flex fw-bold justify-content-between">
+                          <p>Player Expences: </p>
+                          <p>$<span id="player-ex">00</span></p>
+                      </div>
+                      <div class="d-flex justify-content-between  align-items-center ">
+                          <p>Manager:</p>
+                          <input id="manager-cost" class="w-50" type="text">
+                      </div>
+                      <div class="d-flex justify-content-between  align-items-center ">
+                          <p>Coach:</p>
+                          <input id="coach-cost" class="w-50" type="text">
+                      </div>
+                      <button id="total-calculate" class="btn btn-primary m-3"> Calculate Total </button>
+                     <div class="d-flex fw-bold justify-content-between">
+                      <p>Total: </p>
+                      <p>$<span id="final-total">00</span></p>
+                     
+                  </div>
+              </div>  
+                
+
+              </div>
+
+          </div>
+
+          <!-- cards sec ends here -->
+          
+      </section>
+
+      <hr>
+
+  </main>
+
+
+  <!-- footer sec start here -->
+
+  <footer>
+      <p class="text-center fw-bold"> copyright @2020 :  All right reserved</p>
+
+  </footer>
+
+  <!-- footer sec ends here -->
+
+
+
+  <!-- bootstraps js cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <!-- js link -->
+  <script src="player.js"></script>
+  <script src="player1.js"></script>
+
+</body>
+</html> 
